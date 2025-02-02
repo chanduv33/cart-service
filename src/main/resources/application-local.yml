@@ -1,6 +1,6 @@
 
 server:
-  port: 8084
+  port: 8088
 
 eureka:
   client:
@@ -13,9 +13,10 @@ spring:
   application:
     name: cart-service
   datasource:
-    url: jdbc:mysql://host.docker.internal:3306/cart_service?createDatabaseIfNotExist=true
-    username: root
-    password: chandu@teja
+    url: jdbc:mysql://192.168.1.4:3306/cart_service?createDatabaseIfNotExist=true
+#    url: jdbc:mysql://host.docker.internal:3306/cart_service?createDatabaseIfNotExist=true
+    username: chandu
+    password: Csv@0157
     driver-class-name: com.mysql.jdbc.Driver
   jpa:
     hibernate:
